@@ -1,0 +1,40 @@
+<h3>Update Produit</h3>
+<form class="form"  (ngSubmit)="onSubmit()">
+
+    <div class="mb-3" >
+        <label class="form-label">Prix</label>
+        <input class="form-control" type="number" id="Prix" [(ngModel)]="produit.prodPrix" name="Prix" >
+    </div>
+
+    <div class="mb-3" >
+        <label class="form-label">Marque</label>
+        <input class="form-control" type="text" id="Marque" [(ngModel)]="produit.prodMarque" name="Marque" >
+    </div>
+
+    <div class="mb-3" >
+        <label class="form-label">description</label>
+        <input class="form-control" type="text" id="description" [(ngModel)]="produit.prodDescription" name="description" >
+    </div>
+
+    <div class="mb-3" >
+        <label class="form-label">Quantité</label>
+        <input class="form-control" type="number" id="Quantité" [(ngModel)]="produit.prodQte" name="Quantité" >
+    </div>
+
+    <div class="mb-3" >
+        <label class="form-label">disponibilité</label>
+        <input class="form-control" type="text" id="disponibilité" [(ngModel)]="produit.prodDispo" name="disponibilité" >
+    </div>
+
+    <div class="mb-3" >
+        <label class="form-label">taille</label>
+        <input class="form-control" type="text" id="taille" [(ngModel)]="produit.taille" name="taille" >
+    </div>
+
+    <div class="mb-3" >
+        <label class="form-label">couleur</label>
+        <input class="form-control" type="text" id="couleur" [(ngModel)]="produit.couleur" name="couleur" >
+    </div>
+   
+    <button class="btn btn-primary" type="submit" >update Produit</button>
+</form>

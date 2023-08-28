@@ -1,0 +1,14 @@
+<form class="form" [formGroup]="categorieForm" (ngSubmit)="onSubmit()">
+    <p>
+      <label class="form-label" for="name">Nom de categorie:</label>
+      <input
+        class="form-control"
+        type="text"
+        id="catlib"
+        name="catlib"
+        formControlName="catlib" />
+    </p>
+    <div>
+      <button style="width: 150px;margin-top: 20px;margin-left: 220px;margin-bottom: 50px;" class="btn btn-primary" type="submit">Submit</button>
+    </div>
+  </form>

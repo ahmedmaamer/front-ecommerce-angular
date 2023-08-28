@@ -1,0 +1,14 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let r of listroles">
+        <th scope="row">{{r.idrole}}</th>
+        <td>{{r.LeRole}}</td>
+      </tr>
+    </tbody>
+  </table>

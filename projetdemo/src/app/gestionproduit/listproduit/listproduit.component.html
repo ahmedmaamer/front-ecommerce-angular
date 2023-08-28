@@ -1,0 +1,32 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Prix</th>
+        <th scope="col">Marque</th>
+        <th scope="col">Description</th>
+        <th scope="col">Qantité</th>
+        <th scope="col">Disponibilité</th>
+        <th scope="col">taille</th>
+        <th scope="col">Couleur</th>
+        <th scope="col">Image </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of listproduits">
+        <th scope="row">{{p.prodref}}</th>
+        <td>{{p.prodPrix}}</td>
+        <td>{{p.prodMarque}}</td>
+        <td>{{p.prodDescription}}</td>
+        <td>{{p.prodQte}}</td>
+        <td>{{p.prodDispo}}</td>
+        <td>{{p.taille}}</td>
+        <td>{{p.couleur}}</td>
+        <td><img src="{{p.img}}"></td>
+        <td><button class="btn btn-success" (click)="addImage(p.prodref)">ajouter image</button></td>
+        <td><button class="btn btn-success" (click)="updateProduit(p.prodref)">Update Produit</button></td>
+        <td><button class="btn btn-danger" (click)="deleteProduit(p.prodref)">Delete Produit</button></td>
+      </tr>
+    </tbody>
+
+  </table>

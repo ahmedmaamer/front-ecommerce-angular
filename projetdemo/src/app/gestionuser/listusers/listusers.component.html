@@ -1,0 +1,24 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">email</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Prénom</th>
+        <th scope="col">username</th>
+        <th scope="col">Tel</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usr of listusr">
+        <th scope="row"> {{usr.uid}}</th>
+        <td>{{usr.email}}</td>
+        <td>{{usr.unom}}</td>
+        <td>{{usr.uprenom}}</td>
+        <td>{{usr.username}}</td>
+        <td>{{usr.utel}}</td>
+        <td><button class="btn btn-success" (click)="updateUser(usr.uid)">Update user</button></td>
+        <td><button class="btn btn-danger" (click)="deleteUser(usr.uid)">Delete user</button></td>
+      </tr>
+    </tbody>
+  </table>

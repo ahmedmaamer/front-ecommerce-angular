@@ -1,0 +1,27 @@
+<h2>Categorie List</h2>
+<table class="table">
+
+<thead>
+<tr>
+    <th>Nom</th>
+    <th>List produits</th>
+    
+   
+</tr>
+
+</thead>
+
+<tbody>
+    <tr *ngFor="let Cat of categories" >
+        <td>{{Cat.catlib}}</td>
+        <td *ngFor="let prod of Cat.listproduits">
+            {{ prod.prodref }} {{ prod.prodPrix }} {{ prod.prodMarque }} {{ prod.prodDescription }} {{ prod.prodQte }} {{prod.prodDispo}} {{prod.taille}} {{prod.couleur}}
+        </td>
+        <td><button class="btn btn-primary" (click)="addProductToCategorie(Cat.catid)">Add produit</button></td>
+        <td><button class="btn btn-success" (click)="updateCategorie(Cat.catid)">Update Categorie</button></td>
+        <td><button class="btn btn-danger" (click)="deleteCategorie(Cat.catid)">Delete Categorie</button></td>
+    </tr>
+</tbody>
+
+</table>
+<button style=" width: 500px; margin-left: 500px;margin-top: 20px;margin-bottom: 50px;" class="btn btn-warning"  (click)="goToAddCategorie()" routerLink="/addcategorie">Add Categorie</button>

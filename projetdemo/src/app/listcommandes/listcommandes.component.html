@@ -1,0 +1,18 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">la date de la commande</th>
+        <th scope="col">Montant totale</th>
+        <th scope="col">l'etat de la commande</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let c of listcommandes">
+        <th scope="row">{{c.CmdId}}</th>
+        <td>{{c.CmdDate}}</td>
+        <td>{{c.MontantTotal}}</td>
+        <td>{{c.etatCmd}}</td>
+      </tr>
+    </tbody>
+  </table>

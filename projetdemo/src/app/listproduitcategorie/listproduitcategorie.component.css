@@ -1,0 +1,49 @@
+.cardBlog {
+    overflow: scroll;
+     max-height: fit-content;
+     height: 400px;
+     border-radius: 10px;
+     margin: 20px;
+     box-shadow:2px 2px 15px 5px rgba(0, 0, 0, 0.253);
+     background-color: rgba(255, 255, 255, 0.655);
+     width: 800px;
+   }
+   .cardBlog::-webkit-scrollbar {
+     display: none;
+   }
+   .cardBlog:hover {
+     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.253);
+   }
+   
+   .cards_img{
+     
+     border-radius: 5px;
+     height: max-content;
+     max-height: 30h !important;
+   }
+   .card_title{
+     font-weight: 600;
+     font-size: 28px;
+     margin-top: 10px;
+   }
+   .card_text {
+    
+     font-size: .9rem;
+     padding:10px ;
+   }
+  
+   .cardBlog:hover {
+     transform: scale(1.03);
+     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.253);
+   
+   }
+  .a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cards_img:hover{
+    transform: scale(1.1);
+     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.253);  
+  }

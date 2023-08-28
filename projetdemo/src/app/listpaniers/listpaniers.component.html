@@ -1,0 +1,15 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Montant totale</th>
+        <th scope="col">nombre d'article</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of listpaniers">
+        <th scope="row">{{p.idpanier}}</th>
+        <td>{{p.MontantTot}}</td>
+      </tr>
+    </tbody>
+  </table>

@@ -1,0 +1,20 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">rue</th>
+        <th scope="col">Ville</th>
+        <th scope="col">Pays</th>
+        <th scope="col">code postal</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let a of listadresses">
+        <th scope="row">{{a.idAdr}}</th>
+        <td>{{a.rue}}</td>
+        <td>{{a.ville}}</td>
+        <td>{{a.pays}}</td>
+        <td>{{a.codePostal}}</td>
+      </tr>
+    </tbody>
+  </table>

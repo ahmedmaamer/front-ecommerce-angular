@@ -1,0 +1,17 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">l'etat de livraison</th>
+        <th scope="col">le frais de livraison</th>
+        <th scope="col">la delais de livraison</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let l of listlivraisons">
+        <th scope="row">{{l.idL}}</th>
+        <td>{{l.etatLiv}}</td>
+        <td>{{l.fraisLiv}}</td>
+        <td>{{l.delaisLiv}}</td>
+    </tbody>
+  </table>

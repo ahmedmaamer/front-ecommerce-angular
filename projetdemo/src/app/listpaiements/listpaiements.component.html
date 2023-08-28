@@ -1,0 +1,16 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">l'etat de paiement</th>
+        <th scope="col">La date de paiement</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let p of listpaiements">
+        <th scope="row">{{p.IdP}}</th>
+        <td>{{p.etatP}}</td>
+        <td>{{p.DateP}}</td>
+      </tr>
+    </tbody>
+  </table>

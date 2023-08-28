@@ -1,0 +1,30 @@
+<form [formGroup]="forminput" class="row g-3">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="nano@exemple.com" formControlName="email">
+    </div>
+    <div class="col-12">
+      <label for="inputUsername" class="form-label">Username</label>
+      <input type="text" class="form-control" id="inputUsername" formControlName="username">
+    </div>
+    <div class="col-12">
+      <label for="inputNom" class="form-label">Nom</label>
+      <input type="text" class="form-control" id="inputNom" formControlName="unom">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPrenom" class="form-label">Prenom</label>
+      <input type="text" class="form-control" id="inputPrenom" formControlName="uprenom">
+    </div>
+    <div class="col-md-6">
+      <label for="inputTel" class="form-label">numéro de telephone</label>
+      <input type="number" class="form-control" id="inputTel" formControlName="utel">
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label">Mot de passe</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password" formControlName="password">
+    </div>
+  
+    <div class="col-12">
+      <input type="submit" (click)="register()" value="sign in">
+    </div>
+  </form>
